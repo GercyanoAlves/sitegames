@@ -73,7 +73,7 @@ main{
 article{
     padding: 0;
     text-align: center;
-
+    color: rgb(3, 3, 3);
 }
 
 /*Artigo*/
@@ -101,3 +101,12 @@ article > h2{
     background-image: url(../img/fundo.jpg);
     color: #fff;
 }
+
+
+/*Rodape*/
+footer{
+    background-color: rgb(87, 82, 82);
+    padding: 20px;
+    text-align: center;
+}
+

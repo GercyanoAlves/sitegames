@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre nós</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/sobrenos.css">
+    <link rel="stylesheet" href="css/media-query.css">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <img src="img/controle.png" style="width: 100px;">
+        <!--Barra de Navegação-->
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Entrar</a></li>
+                <li><a href="cadastro.html">Cadastrar</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+
+        <!--Artigo-->
+        <article>
+            <h2>Sobre nós</h2>
+            <div class="cardprincipal">
+                <div class="card">
+                    <div class="content">
+                        <h2>01</h2>
+                        <h3>Card Um</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, quas sed libero maxime doloribus id voluptas quod laudantium et ab? Esse amet, omnis neque accusamus reiciendis eveniet? Magni, perspiciatis rerum.</p>
+                            <a href="#">Mais informações</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+          <footer class="bg-dark text-light">
+            
+            <div class="rodape">
+                <h2>Redes Sociaiss</h2>
+            </div>
+            <div class="rodape1" style="background-color: #333; padding: 20px;" >
+              &copy 2022 OS FILHOS DE PYTHON
+            </div>
+          </footer>
+    </main>
+    <script>
+
+        function mudouTamanho(){
+            if(window.innerWidth >= 768){
+                itens.style.display = 'block'
+            }else{
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu(){
+            if(itens.style.display == 'block'){
+                itens.style.display = 'none'
+            }else{
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+    <script type="text/javascript" src="js/vanilla.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card"));
+    </script>
+</body>
+</html>

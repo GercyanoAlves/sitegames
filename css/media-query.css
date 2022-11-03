@@ -17,7 +17,6 @@ Grandes telas: acima de 1200px
     menu {
         display: block;
     }
-    menu#itens
 
     menu > ul > li{
         display: inline-block;
